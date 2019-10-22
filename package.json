@@ -1,7 +1,8 @@
 {
   "name": "firebase-summit-presentation",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage" : "https://fir-summit-19-bfa2f.web.app/",
   "dependencies": {
     "node-sass": "^4.12.0",
     "react": "^16.10.2",
