@@ -1,0 +1,16 @@
+
+1/ WHAT ? 
+
+Firebase est un ensemble de services d'hébergement pour n'importe quel type d'application
+(Android, iOS, Javascript, Node.js, Java, Unity, PHP, C++ ...).
+Lancé en 2011, racheté en 2014 par Google. 
+
+Build apps fast
+Google insfrastructure
+One platform
+
+Une offre divisé en 3 axes 
+- Build better apps
+- Improve App quality
+- Grow your business
+
