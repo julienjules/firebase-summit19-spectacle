@@ -1,0 +1,5 @@
+firebase_app_distribution(
+  app: "1:840725715993:android:49e60fbd27c2829b",
+  groups: "internal-testers",
+  firebase_cli_path: "/usr/local/bin/firebase"
+)

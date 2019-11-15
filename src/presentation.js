@@ -20,6 +20,8 @@ import createTheme from 'spectacle/lib/themes/default';
 
 import './style.scss';
 import features from './assets/features.png';
+import V2iOS from './assets/V2iOS.jpg';
+import summitRetro from './assets/firebase-summit-retro.png';
 
 // Require CSS
 require('normalize.css');
@@ -55,6 +57,14 @@ export default class Presentation extends React.Component {
           <Link href="" textSize={18} textColor="secondary">julien.robidet@decathlon.com</Link>
         </Slide>
 
+        <Slide transition={['fade']} bgColor="primary">
+          <Image src={V2iOS} />
+        </Slide>
+
+        {/* <Slide transition={['fade']} bgColor="primary">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YKZ6rP4kwV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </Slide> */}
+
         <Slide transition={['slide']} bgColor="primary">
           <Image src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png" width="124" height="202" />
           <Text caps lineHeight={1} textColor="secondary">
@@ -65,6 +75,10 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
+        <Slide transition={['slide']} bgColor="primary">
+          <Image src={summitRetro} />
+        </Slide>
+
         <Slide transition={['fade']} bgColor="primary">
           <Heading margin="0px 0 60px" size={1} textColor="secondary" caps>
             What's Firebase ?
@@ -73,7 +87,7 @@ export default class Presentation extends React.Component {
             Build apps fast
           </Heading>
           <Heading size={6} textColor="tertiary">
-            Google insfrastructure
+            Google infrastructure
           </Heading>
           <Heading size={6} textColor="tertiary">
             One platform
@@ -91,7 +105,7 @@ export default class Presentation extends React.Component {
           <Heading size={3} textColor="secondary" caps>
             App Distribution
           </Heading>
-          <br/>
+          <br />
           <BlockQuote>
             <Quote textColor="secondary">Instantly install the build and test without installing any SDK...</Quote>
           </BlockQuote>
@@ -102,13 +116,17 @@ export default class Presentation extends React.Component {
             <ListItem>Manage testers</ListItem>
           </List>
         </Slide>
+
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>
             Rollouts for Config Remote
           </Heading>
           <List>
             <ListItem>Show/Hide features in demand</ListItem>
+            <ListItem>For segments of your user base (app version, Analytics audience, language...)</ListItem>
+            <ListItem>Run A/B tests</ListItem>
             <ListItem>Compare versions in Crashlytics by feature</ListItem>
+            <ListItem>Web!</ListItem>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -116,13 +134,13 @@ export default class Presentation extends React.Component {
             Test Lab
           </Heading>
           <List>
-            <ListItem>Test Sharding (divide tests into subgroups, run them in parallel)</ListItem>
+            <ListItem>Real devices (iOS, Android)</ListItem>
             <ListItem>Logs, Screenshot and videos</ListItem>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>
-            And what about Web(app) ? 
+            And what about Web(app) ?
           </Heading>
           <List>
             <ListItem>Google Analytics</ListItem>
@@ -132,7 +150,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>
-            Emulator Suite
+            Local Emulator Suite
           </Heading>
           <List>
             <ListItem>Cloud Firestore / Realtime DB / Functions / Hosting</ListItem>
@@ -140,7 +158,7 @@ export default class Presentation extends React.Component {
             <ListItem>Android SDK	 / iOS SDK / Web SDK / Node.js Admin SDK</ListItem>
           </List>
         </Slide>
-        
+
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>
             Firebase Extensions
@@ -154,10 +172,24 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>
+            Auto ML Vision Edge
+          </Heading>
+          <List>
+            <ListItem>Technology from Google</ListItem>
+            <ListItem>Easy to use</ListItem>
+            <ListItem>Automaticaly create, train, optimize models on Firebase</ListItem>
+            <ListItem>No ML expertise required</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={3} textColor="secondary" caps>
             Predictions
           </Heading>
-          <br/>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ORrvrVEHJz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <List>
+            <ListItem>ML to create dynamic user segments</ListItem>
+            <ListItem>Remote Config, Notifications composer, Firebase In-App Messaging, A/B Testing</ListItem>
+            <ListItem>Provide a custom experience based on each of your users' anticipated needs</ListItem>
+          </List>
         </Slide>
       </Deck>
     );
